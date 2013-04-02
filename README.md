@@ -1,4 +1,4 @@
-# Salami for Rails
+# CSU Chico ACM Public Website
 
 Salami is a Ruby on Rails template created to serve as a starting point for quickly deploying a usable web application with the following features:
 
