@@ -7,7 +7,7 @@ Salami is a Ruby on Rails template created to serve as a starting point for quic
 * Admin management interface with [kaminari](https://github.com/amatsuda/kaminari) for paginated searching of users and "login as user" functionality
 * 100% Heroku compatible to provide a fast and easy development cycle
 
-<a href="http://salami.herokuapp.com/" target="_blank">Sample deployed application</a>
+<a href="http://chicoacm.herokuapp.com/" target="_blank">Sample deployed application</a>
 
 ## Getting Started
 
@@ -15,8 +15,8 @@ First, you must ensure that you have <a href="http://rubyonrails.org/download" t
 
 then...
 
-    $ git clone git@github.com:jsealey/Salami.git
-    $ cd Salami
+    $ git clone git@github.com:jsealey/chicoacm.git
+    $ cd chicoacm
     $ bundle install
     $ rake assets:precompile
     $ rake db:migrate
