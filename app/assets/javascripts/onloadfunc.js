@@ -1,3 +1,3 @@
 $(window).load(function() {
-  $('#featured').orbit();
+  // $('#featured').orbit();
 });

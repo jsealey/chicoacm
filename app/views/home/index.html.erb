@@ -1,63 +1,45 @@
-    <!-- Content Slider -->
- 
+<div class="row">
+  <div class="twelve columns">
     <div class="row">
-      <div class="twelve columns hide-for-small">
-        <div id="featured">
-          <img src="http://placehold.it/1200x500&text=1200x500 Slide Image 1" alt="slide image">
-          <img src="http://placehold.it/1200x500&text=1200x500 Slide Image 2" alt="slide image">
-          <img src="http://placehold.it/1200x500&text=1200x500 Slide Image 3" alt="slide image">
-        </div>
-      <hr />
-      </div>
-    </div>
- 
-    <!-- End Content Slider -->
- 
-    <!-- Mobile Header -->
- 
-      <div class="row">
-        <div class="twelve columns show-for-small">
-          <img src="http://placehold.it/1200x700&text=Mobile Header">
-        </div>
-      </div>
- 
-    <!-- End Mobile Header -->
- 
- 
-    <!-- Second Band (Image Left with Text) -->
-  
-  <div class="row">
-    <div class="twelve columns">
-      <div class="row">
-        <div class="seven columns">
-          <h4>This is a content section.</h4>
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-        </div>
-        <div class="five columns">
-          <%= render "devise/registrations/new" %>
-        </div>
+      <div class="twelve columns">
+        <h4>Probem Archive</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Problem Name</th>
+              <th width="200">Problem Type</th>
+              <th width="150">Start Code</th>
+              <th width="150">Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Three Card Monte</td>
+              <td>Beginner</td>
+              <td><a href="http://pastebin.com/3DrJH3dt" target="_blank">Start Code</a></td>
+              <td> - </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-  
-  
-  <!-- Third Band (Image Right with Text) -->
-  
-  <div class="row">
-    <div class="four columns">
-     <div class="flex-video">
-        <img src="http://placehold.it/400x300&text=[Youtube Video]" />
-        <!-- <iframe width="420" height="315" src="http://www.youtube.com/embed/9otNWTHOJi8" frameborder="0" allowfullscreen></iframe> -->
+</div>
+
+
+ <% if !user_signed_in? %>
+    <div class="row">
+      <div class="twelve columns">
+        <div class="row">
+          <div class="five columns">
+            <%= render "devise/registrations/new" %>
+          </div>
+          <div class="seven columns">
+            <div class="panel">
+              <%= image_tag("CSUC_ACM_2012.jpg") %>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-
-    <div class="eight columns">
-      <h4>This is a content section.</h4>
-      
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      
-      <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-          
-    </div>
-  </div>
+<% end %>
